@@ -1,0 +1,24 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "Tom Boland", email = "github@t0mb.net"},
+]
+dependencies = []
+requires-python = ">=3.10"
+license = {text = "MIT"}
+[project.optional-dependencies]
+
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "hypothesis>=6.60.0",
+    "pytest>=7.2.0",
+    "flake8>=6.0.0",
+    "mypy>=0.991",
+]
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
