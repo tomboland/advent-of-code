@@ -14,7 +14,7 @@ input_line_re = re.compile('(?P<abc>[ABC]) (?P<xyz>[XYZ])')
 def test_parse_input_line_parses_correct_data(abc, xyz):
     s = f"{abc} {xyz}\n"
     match parse_input_line(s):
-        case RPS(), RPS(): return None
+        case RPS(), WLD(): return None
         case None: raise AssertionError()
 
 
